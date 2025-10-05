@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tempo Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-animate">
+
+  <!-- Header -->
+  <header class="header">
+    <img src="M-removebg-preview.png" alt="Tempo Project Logo" width="150" height="100" />
+    <nav class="header-links">
+      <a href="#about">About</a>
+      <a href="#desiredweather">Desired Weather</a>
+      <a href="#location">Location</a>
+      <a href="#datetime">Date & Time</a>
+      <a href="#sumbit">sumbit</a>
+    </nav>
+  </header>
+
+  <!-- Landing -->
+  <section class="landing-page">
+    <div class="landing-page-text">
+      <h1>Introduction</h1>
+      <h2>
+    This project is made for the purpose of helping people to choose the best time and location for their outdoor
+          activities based on the weather conditions. The project uses data from NASA's POWER 
+          (Prediction Of Worldwide Energy Resource) API to provide accurate and reliable weather information.
+          The user can input their desired date, time, location, and weather conditions, and the project will
+          return a list of suitable options for outdoor activities. The project is designed to be user-friendly
+          and accessible to everyone, regardless of their technical skills. It aims to promote outdoor activities
+          and encourage people to spend more time in nature while ensuring their safety and comfort.
+      </h2>
+    </div>
+    <div class="image">
+      <img src="wallpaperflare.com_wallpaper.jpg" alt="Outdoor activity" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section-anchor">
+    <div class="about-text">
+      <h1>About project</h1>
+      <h3>
+ This project was developed as part of the NASA Space Apps Challenge to provide a smart and accessible way 
+      to connect people with reliable weather data for outdoor planning.
+      Our goal is to make outdoor activities safer, more enjoyable, and more predictable. 
+      By integrating data from NASA’s POWER (Prediction Of Worldwide Energy Resources) API, 
+      the platform delivers precise information on temperature, humidity, solar radiation, wind speed, and cloud coverage. 
+      This data is processed and presented in a simple, user-friendly interface.
+      Users can enter their preferred date, time, location, and desired weather conditions, 
+      and the system will analyze NASA’s datasets to recommend the most suitable windows for outdoor events. 
+      Whether it’s a sports activity, family gathering, hiking trip, or community event, 
+      the project helps reduce uncertainty and maximize comfort.
+      Beyond usability, this solution highlights the importance of open scientific data and demonstrates 
+      how space-based observations can directly improve daily life on Earth. 
+      It reflects our team’s mission to encourage people to spend more time in nature while ensuring 
+      their safety through accurate, science-driven insights.
+      </h3>
+    </div>
+    <div class="image-2">
+      <img src="wallpaperflare.com_wallpaper (1).jpg" alt="Outdoor activity 2" />
+    </div>
+  </section>
+
+  <!-- Desired Weather -->
+  <section id="desiredweather" class="desiredweather section-anchor">
+    <div class="desiredweather-text">
+      <h1>Desired Weather</h1>
+
+<h3>s why this section was created: to help you choose the perfect time and place for your outdoor activities, based on real NASA weather data.
+
+By entering your desired weather preferences — such as temperature, humidity, wind speed, or cloud coverage — our system connects directly to NASA’s POWER (Prediction Of Worldwide Energy Resources) API. It then analyzes satellite-based data to find locations and timeframes that best match your chosen conditions.
+
+This feature allows users to plan smarter:
+
+🌍 Select the region you’re interested in.
+
+☀️ Choose your preferred climate conditions.
+
+🕒 Get results that align with your comfort and activity needs.
+
+We built this tool to make it easier for everyone to experience the outdoors safely and comfortably, while also raising awareness about the impact of weather patterns on human activity.
+So, please enter your desired weather details below — and let science help you find the best possible conditions.
+</h3>
+</div>
+    <div class="image-3">
+      <div class="weather-overlay">
+        <img src="wallpaperflare.com_wallpaper (2).jpg" alt="Desired weather background" />
+        <div class="overlay-content">
+          <h2>Please Choose</h2>
+          <input type="number" id="weather" name= "weather">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location (overlay + autocomplete) -->
+<section id="location" class="location section-anchor">
+  <div class="location-text">
+    <h1>Location</h1>
+    <h3>
+      Choosing the right location is just as important as choosing the right weather.
+      Different areas experience unique climate patterns — temperature, humidity, and
+      sunlight can all change dramatically from one place to another.
+      <br><br>
+      Select your desired country, region, and city to explore real-time data and
+      predictions powered by NASA’s POWER system.
+    </h3>
+  </div>
+
+  <div class="image-4">
+    <div class="location-overlay">
+      <img src="wallpaperflare.com_wallpaper (3).jpg" alt="Location background" />
+      <div class="overlay-content">
+        <h2>Please Choose Location</h2>
+
+        <div class="dropdown-container">
+          <!-- Country -->
+          <label for="country" id="country" name="country">Select Country:</label>
+          <input type="text">
+          </select>
+
+          <!-- Region -->
+          <label for="region" id="region" name="region">Select Region:</label>
+          <input type="text">
+          </select>
+
+          <!-- City -->
+          <label for="city" id="city" name="city">Select City:</label>
+          <input type="text">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Date & Time -->
+<section id="datetime" class="datetime section-anchor">
+  <div class="datetime-text">
+    <h1>Date</h1>
+    <h3>Selecting the right date and time is crucial when planning any outdoor activity or event.
+Weather conditions can change drastically throughout the day — what’s sunny in the morning might turn cloudy or rainy by the afternoon.
+
+In this section, you can choose the specific date and time you’re interested in, allowing our system to fetch accurate data from NASA’s POWER API for that exact period.
+This helps you understand how temperature, humidity, wind, and sunlight vary over time.
+
+By aligning your schedule with favorable weather conditions, you can maximize comfort, safety, and efficiency — whether it’s for recreation, research, or environmental planning.
+Our goal is to help you plan your activities with precision and confidence, supported by reliable climate data.</h3>
+  </div>
+  <div class="image-5">
+    <div class="datetime-overlay">
+      <img src="wallpaperflare.com_wallpaper (4).jpg" alt="Date and Time background" />
+      <div class="overlay-content">
+        <h2>Please Choose Date</h2>
+        <label for="date-input">Select Date:</label>
+        <input type="date" id="date-input" name="date"/>
+        <br><br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Submit Button -->
+<div id="sumbit" class="submit-section">
+  <button type="button" class="submit-btn" id="submit-btn">Submit</button>
+</div>
+
+  <!-- JS -->
+  <script>
+    // Scroll reveal (robust)
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealSections = document.querySelectorAll('.about, .desiredweather, .location, .datetime');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('show');
+        });
+      }, { threshold: 0.15 });
+
+      revealSections.forEach((sec) => observer.observe(sec));
+    });
+
+      document.getElementById("submit-btn").addEventListener("click", async () => {
+      const payload = {
+        country: document.getElementById("country").value,
+        region: document.getElementById("region").value,
+        city: document.getElementById("city").value,
+        date: document.getElementById("date-input").value,
+        desiredWeather: document.getElementById("weather").value
+      };
+
+
+    try {
+      const res = await fetch("http://localhost:5000/api/automate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await res.json();
+
+      // ✅ Option 1: Redirect to results.html with query params
+      localStorage.setItem("weatherResults", JSON.stringify(data));
+      window.location.href = "result.html";
+
+    } catch (err) {
+      console.error("Error:", err);
+      alert("Failed to fetch weather data");
+    }
+  });
+  </script>
+</body>
+</html>

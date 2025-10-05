@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prediction Results</title>
+</head>
+<body>
+  <header class="header">
+    <div style="color: white; font-size: 24px; font-weight: bold;">Tempo Project</div>
+  </header>
+
+  <div class="result-page">
+    <h1>Prediction Results</h1>
+    <div id="result-container" class="result-container"></div>
+    <a href="project.html" class="submit-btn">Go Back</a>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const data = JSON.parse(localStorage.getItem("predictionResult")) || {};
+      const container = document.getElementById("result-container");
+
+      if (!Object.keys(data).length) {
+        container.textContent = "No results found!";
+        return;
+      }
+
+      container.innerHTML = `
+        <pre>${JSON.stringify(data, null, 2)}</pre>
+      `;
+    });
+  </script>
+</body>
+</html>
